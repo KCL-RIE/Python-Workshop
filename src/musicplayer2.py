@@ -11,7 +11,7 @@ from libs.decorators import prettyprint
 # here = lambda x: os.path.abspath(os.path.join(os.path.dirname(__file__), x))
 
 class Player:
-    def __init__(self, file, mood=1):
+    def __init__(self, file):
         self.file = file
         self.mood = mood
         self._setup_audio_env()
