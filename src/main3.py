@@ -16,9 +16,15 @@ if __name__=="__main__":
 		player = musicplayer2.Player(file)
 		player.play_music()
 	elif mode == 'a':
+		moodChoice = input('Angry : a  |  Disgust : d  |  Fear : f  |  Sad : s  |  Joy : j')
+
+		here = lambda x: os.path.abspath(os.path.join(os.path.dirname(__file__), x))
+		musicDisgust = here('../resources/music/disgust/R.I.E_Tribe.mp3')
+		# for song in musicDisgust:
 		mood   = weather.mood_upon_weather(weatherNewry)
-		player = weatherplayer.WeatherPlayer(file, mood=mood)
+		player = weatherplayer.WeatherPlayer(musicDisgust, mood=mood)
 		player.play_music()
+			
 
 
 ## TODO
