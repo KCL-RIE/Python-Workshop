@@ -3,7 +3,7 @@ from libs import choosefile, apiMet
 
 file = choosefile.find_path_GUI()
 
-apiKey       = "{INSERT-YOU-APIKEY-HERE}"
+apiKey       = "20079105-05bc-481c-bd82-87310eee8eca"
 metData      = apiMet.MetManager(apiKey)
 metData      = metData.extract_from_api()
 weatherNewry = metData[5]  # Code smells of five fish!

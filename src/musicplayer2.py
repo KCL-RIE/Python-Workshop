@@ -13,7 +13,6 @@ from libs.decorators import prettyprint
 class Player:
     def __init__(self, file):
         self.file = file
-        self.mood = mood
         self._setup_audio_env()
 
     # @prettyprint
